@@ -58,9 +58,22 @@ activar_invocable3(){
   }
 // Fin
 
+invocable_sumar1(){
+  let dato_sercivio_suma;
+  dato_sercivio_suma = this.pruebaSrv.sumar1(3);
+  console.log(dato_sercivio_suma)
+}
 
-
-
-
-
+invocable_promedio(){
+  let promedio_desde_servicio = this.pruebaSrv.promedio(4,4);
+  if (promedio_desde_servicio <= 4){
+    console.log(promedio_desde_servicio);
+    console.log("Reprobado");
+  }else if(promedio_desde_servicio == 4){
+    console.log(promedio_desde_servicio)
+    console.log("Aprobaste con nota minima")
+  }else{
+      console.log(promedio_desde_servicio);
+      console.log("Aprobado");}
+}
 }

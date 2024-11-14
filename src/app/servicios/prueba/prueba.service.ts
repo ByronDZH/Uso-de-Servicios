@@ -23,4 +23,14 @@ export class PruebaService {
     let dato = "Funcion 3 invocada";
     return dato;
   }
+
+  sumar1(numero:any){
+    let dato = 5;
+    return dato + numero;
+  }
+
+  promedio(numero1:any, numero2:any){
+    let promedio = (numero1 + numero2)/2
+    return promedio;
+  }
 }
